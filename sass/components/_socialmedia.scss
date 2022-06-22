@@ -51,6 +51,10 @@
 .socialmedia__container {
     width: 206px;
     height: 80px;
+
+    @media screen and (max-width: 767px) {
+        margin: 60px auto;
+    }
 }
 
 .socialmedia__text {

@@ -4,7 +4,9 @@
 // }
 
 .subscribtion {
-    @include centeredFlex($cross-axis:flex-end);
+    @media screen and (min-width: $desktop) {
+        @include centeredFlex($cross-axis:flex-end);
+    }
 }
 
 .subscribtion__text {
@@ -42,6 +44,10 @@
 }
 
 .subscribtion__button {
+    @media screen and (max-width: 1199px) {
+        margin-top: 20px;;
+    }
+
     // display: inline-flex;
     // align-items: center;
     @include centeredFlex($type:inline-flex);

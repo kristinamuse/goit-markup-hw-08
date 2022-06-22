@@ -3,16 +3,28 @@
 // }
 
 .clients {
-    @include centeredFlex();
+    @include centeredFlex($wrap: wrap);
+    gap: 30px;
 }
 
 .clients__item {
-    flex-basis: calc((100% - 150px) / 6);
-    margin-right: 30px;
     height: 92px;
 
-    &:nth-child(6n) {
-        margin-right: 0;
+    @media screen and (min-width: $mobile) {
+        flex-basis: calc((100% - 30px) / 2)
+    }
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 60px) / 3)
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 150px) / 6);
+        // margin-right: 30px;
+        
+        // &:nth-child(6n) {
+        //     margin-right: 0;
+        // }
     }
 }
 

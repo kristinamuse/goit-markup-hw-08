@@ -5,5 +5,11 @@
 // }
 
 .container-footer {
-    @include centeredFlex($main-axis:space-between, $cross-axis:baseline);
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include centeredFlex($main-axis:space-between, $cross-axis:baseline);
+    }
 }

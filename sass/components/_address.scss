@@ -8,7 +8,11 @@
 }
 
 .address__item {
-    margin-top: 9px;
+    margin-top: 8px;
+    
+    @media screen and (min-width: $desktop) {
+        margin-top: 9px;
+    }
 }
 
 .address__link {
