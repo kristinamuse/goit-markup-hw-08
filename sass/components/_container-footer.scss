@@ -1,0 +1,9 @@
+// .container-footer {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: baseline;
+// }
+
+.container-footer {
+    @include centeredFlex($main-axis:space-between, $cross-axis:baseline);
+}

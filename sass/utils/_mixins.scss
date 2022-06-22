@@ -1,0 +1,7 @@
+@mixin centeredFlex($type:flex, $direction: row, $main-axis:center, $cross-axis:center, $wrap: nowrap) {
+    display: $type;
+    flex-direction: $direction;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+    flex-wrap: $wrap;
+}
