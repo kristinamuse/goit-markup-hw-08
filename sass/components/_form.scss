@@ -7,8 +7,12 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        line-height: 1.15;
+    }
 }
 
 // .form__field {
@@ -108,9 +112,14 @@
     // align-items: center;
     @include centeredFlex($main-axis:flex-start);
     
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--secondary-text-colour);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .form__checkbox-input {
@@ -142,8 +151,8 @@
 }
 
 .form__checkbox-link {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--accent-colour);
 
     transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -151,13 +160,15 @@
     &:hover{
         text-decoration: none;
     }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .form__button {
-    margin-top: 30px;
+    display: block;
+    margin: 30px auto 0;
     padding: 10px 55px;
-}
-
-.form__btn {
-    text-align: center;
 }
