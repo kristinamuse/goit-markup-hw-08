@@ -43,6 +43,12 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+                    <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                        <use class="menu-button__icon-cross" href="./images/sprite.svg#cross"></use>
+                        <use class="menu-button__icon-menu" href="./images/sprite.svg#menu"></use>
+                    </svg>
+            </button>
         </div>
     </header>
     <!-- Main -->
@@ -101,7 +107,7 @@
                                 <svg width="16" height="15" class="form__checkbox-icon">
                                     <use href="./images/sprite.svg#icon-check"></use>
                                 </svg>
-                                Погоджуюся з розсилкою та приймаю<a href="" class="form__checkbox-link">Умови договору</a>
+                                Погоджуюся з розсилкою та приймаю &nbsp<a href="" class="form__checkbox-link">Умови договору</a>
                             </label>
                         </p>
                         <button type="submit" class="button form__button">Надіслати</button>
@@ -456,5 +462,6 @@
     </footer>
     <!-- JS -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

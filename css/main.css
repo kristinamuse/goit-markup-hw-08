@@ -301,6 +301,33 @@ img {
   }
 }
 
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button:hover, .menu-button:focus {
+  fill: var(--accent-colour);
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
+}
+
+.menu-button__icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon-cross {
+  display: block;
+}
+
 .hero {
   text-align: center;
   padding: 118px 0px;
