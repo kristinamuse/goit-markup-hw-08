@@ -5,7 +5,7 @@
 
 .portfolio {
     @media screen and (min-width: $tablet) {
-        @include centeredFlex($wrap: wrap, $main-axis: flex-start);
+        @include centeredFlex($wrap: wrap, $main-axis: flex-start, $cross-axis:stretch);
         gap: 30px;
     }
 }
