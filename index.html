@@ -44,13 +44,13 @@
                 </li>
             </ul>
             <div class="mobile-menu">
-                <button type="button" class="mobile-menu__button is-open" aria-expanded="false" data-menu-button>
+                <button type="button" class="mobile-menu__button" aria-expanded="false" aria-controls="mobile-menu__container" data-menu-button>
                     <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
                         <use class="mobile-menu__icon-cross" href="./images/sprite.svg#cross"></use>
                         <use class="mobile-menu__icon-menu" href="./images/sprite.svg#menu"></use>
                     </svg>
                 </button>
-                <div class="mobile-menu__container is-open" data-menu>
+                <div class="mobile-menu__container" id="mobile-menu__container" data-menu>
                     Content menu
                 </div>
             </div>
