@@ -43,12 +43,17 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+            <div class="mobile-menu">
+                <button type="button" class="mobile-menu__button is-open" aria-expanded="false" data-menu-button>
                     <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
-                        <use class="menu-button__icon-cross" href="./images/sprite.svg#cross"></use>
-                        <use class="menu-button__icon-menu" href="./images/sprite.svg#menu"></use>
+                        <use class="mobile-menu__icon-cross" href="./images/sprite.svg#cross"></use>
+                        <use class="mobile-menu__icon-menu" href="./images/sprite.svg#menu"></use>
                     </svg>
-            </button>
+                </button>
+                <div class="mobile-menu__container is-open" data-menu>
+                    Content menu
+                </div>
+            </div>
         </div>
     </header>
     <!-- Main -->
@@ -107,7 +112,7 @@
                                 <svg width="16" height="15" class="form__checkbox-icon">
                                     <use href="./images/sprite.svg#icon-check"></use>
                                 </svg>
-                                Погоджуюся з розсилкою та приймаю &nbsp<a href="" class="form__checkbox-link">Умови договору</a>
+                                Погоджуюся з розсилкою та приймаю<a href="" class="form__checkbox-link">Умови договору</a>
                             </label>
                         </p>
                         <button type="submit" class="button form__button">Надіслати</button>
@@ -190,7 +195,9 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__card">
-                        <img src="./images/img-3-2.jpg" alt="Співробітник" width="270" height="260">
+                        <div class="team__thumb">
+                            <img src="./images/img-3-2.jpg" alt="Співробітник" width="270" height="260">
+                        </div>
                         <div class="team__information">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p lang="en" class="team__text">Product Designer</p>

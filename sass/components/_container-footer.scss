@@ -9,6 +9,10 @@
         text-align: center;
     }
 
+    @media screen and (min-width: $tablet) and (max-width: 1199px){
+        @include centeredFlex($main-axis:space-around,$wrap: wrap, $cross-axis:baseline);
+    }
+
     @media screen and (min-width: $desktop) {
         @include centeredFlex($main-axis:space-between, $cross-axis:baseline);
     }

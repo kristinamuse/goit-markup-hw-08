@@ -1,4 +1,10 @@
-.menu-button{
+.mobile-menu{
+    @media screen and (min-width: $tablet){
+        display: none;
+    }
+}
+
+.mobile-menu__button{
     display: inline-flex;
 
     border: none;
@@ -23,19 +29,32 @@
 
 // .menu-button.is-open .icon-menu{
 //     display: none;
-// }
+// } репета
 
-.menu-button__icon-menu{
-    .menu-button.is-open &{
+.mobile-menu__icon-menu{
+    .mobile-menu__button.is-open &{
         display: none;
     }
 }
 
-.menu-button__icon-cross{
+.mobile-menu__icon-cross{
     display: none;
 
-    .menu-button.is-open &{
+    .mobile-menu__button.is-open &{
         display: block;
     }
 }
 
+.mobile-menu__container{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
+    background-color: var(--primary-background-colour);
+
+    &.is-open{
+        display: block;
+    }
+}
