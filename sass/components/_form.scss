@@ -110,7 +110,12 @@
 .form__checkbox-label {
     // display: flex;
     // align-items: center;
-    @include centeredFlex();
+
+    // @media screen and (max-width: 471px) {
+    //     @include centeredFlex($wrap:wrap);
+    // }
+
+    @include centeredFlex($wrap:wrap);
     
     font-size: 12px;
     line-height: 1.17;

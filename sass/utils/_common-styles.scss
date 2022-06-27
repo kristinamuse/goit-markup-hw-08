@@ -3,6 +3,10 @@
     color: var(--primary-text-colour);
     font-family: $fontPrimary;
     letter-spacing: $letterSpacingPrimary;
+
+    &.modal-open{
+        overflow: hidden;
+    }
 }
 
 h1,
