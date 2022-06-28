@@ -171,8 +171,8 @@ img {
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
@@ -208,6 +208,8 @@ img {
 }
 
 .mobile-menu__button {
+  position: relative;
+  z-index: 2;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
