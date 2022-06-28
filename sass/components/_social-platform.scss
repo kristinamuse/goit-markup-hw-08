@@ -3,14 +3,12 @@
         display: none;
     }
 
-    display: flex;
+    @include centeredFlex($main-axis:flex-start, $wrap:wrap);
     gap: 20px;
 }
 
 // .social-platform__item{
-//     &:not(:last-child){
-//         margin-right: 20px;
-//     }
+//     position: relative;
 // }
 
 .social-platform__link{
@@ -26,5 +24,20 @@
     &:hover,
     &:focus{
         color: #188CE8;
+    }
+
+    &--line{
+        position: relative;
+    }
+
+    &--line::after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(33, 33, 33, 0.2);
     }
 }
