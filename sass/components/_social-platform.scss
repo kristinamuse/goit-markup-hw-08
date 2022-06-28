@@ -4,12 +4,17 @@
     }
 
     @include centeredFlex($main-axis:flex-start, $wrap:wrap);
-    gap: 20px;
 }
 
-// .social-platform__item{
-//     position: relative;
-// }
+.social-platform__item{
+    &:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+    }
+    &:not(:first-child){
+        padding-left: 10px;
+    }
+}
 
 .social-platform__link{
     font-weight: 500;
@@ -24,20 +29,5 @@
     &:hover,
     &:focus{
         color: #188CE8;
-    }
-
-    &--line{
-        position: relative;
-    }
-
-    &--line::after{
-        content: "";
-        position: absolute;
-        display: inline-block;
-        top: 0;
-        left: 0;
-        width: 1px;
-        height: 100%;
-        background-color: rgba(33, 33, 33, 0.2);
     }
 }
