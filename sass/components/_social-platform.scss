@@ -14,6 +14,18 @@
     &:not(:first-child){
         padding-left: 10px;
     }
+
+    @media screen and (min-width: 359px) and (max-width: 439px){
+        &:last-child{
+        padding-left: 0;
+        }
+    }
+
+    @media screen and (min-width: 264px) and (max-width: 358px){
+        &:nth-child(3n){
+        padding-left: 0;
+        }
+    }
 }
 
 .social-platform__link{
